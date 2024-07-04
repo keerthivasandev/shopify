@@ -30,7 +30,7 @@ body{
   padding-bottom: 40px;
 }
 
-#product1 button {
+#product1 .categories button {
   bottom-top: 100px;
   width: 300px;
   height: 40px;
@@ -39,7 +39,7 @@ body{
 }
 
 
-#product1 button i {
+#product1 .categories button i {
   opacity: 0;
   color: white;
 
@@ -149,11 +149,16 @@ body{
       border: none;
      border-radius: 10px;
   }
-  
+
+  #product1 .pro #addtocart {
+    height:40px;
+    width: 100%;
+    font-size:20px;
+  }
 
   /* media query */
 
-  @media (max-width: 767px) {
+  @media (min-width: 640px) and @media (max-width: 766px) {
   
     .section-p1 {
       padding: 40px 40px  
@@ -169,7 +174,6 @@ body{
 
     
     #product1 .pro{
-      margin: 15px;
       width: 40%;
     }
 
@@ -178,7 +182,7 @@ body{
       display: hidden;
       height:40%;
     }  
-    #product1 .pro button {
+    #product1 .pro .categories button {
       width: 120px;
     }
     #product1 .pro .badge {
@@ -186,6 +190,7 @@ body{
         font-size: 10px;
     }
 
+ 
     
   }
   
@@ -214,6 +219,7 @@ body{
       
       #product1 .pro{
         width: 60%;
+        height: 70%;
       }
       
   
@@ -222,6 +228,8 @@ body{
         position: relative;
         object-fit: cover;
       }
+      
+
   }
   @media (min-width: 1025px) {
 
@@ -229,17 +237,18 @@ body{
       display: flex;
       justify-content: space-between;
       padding: 20px;
-      flex: 1 1 300px; 
-      flex-wrap: wrap
+      flex: 1 1 1; 
+      flex-wrap: wrap;
       }
     
     #product1 .pro-container .pro img{
-      width:100%;
-      height: 80%;
+      width: 100%;
+      height: 70%;
       position: relative;
       object-fit: cover;
-
     }
+
+
 }
 
   

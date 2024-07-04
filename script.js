@@ -46,7 +46,7 @@ function menFunc() {
           <span id="offer" style="padding-left: 10px; color: #FF3737;">50% off</span>
           </div>
           </div>
-      <button>Add to cart</button>
+      <button id="addtocart">Add to cart</button>
         </div>
       `;
     });
@@ -97,7 +97,7 @@ function womenFunc() {
           <span id="offer" style="padding-left: 10px; color: #FF3737;">50% off</span>
           </div>
           </div>
-          <button>Add to cart</button>
+          <button id="addtocart">Add to cart</button>
         </div>
       `;
     });
@@ -148,7 +148,7 @@ function kidsFunc() {
           <span id="offer" style="padding-left: 10px; color: #FF3737;">50% off</span>
           </div>
           </div>
-     <button>Add to cart</button>
+     <button id="addtocart">Add to cart</button>
         </div>
       `;
     });
