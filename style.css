@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0; 
+  box-sizing: border-box;
+  font-family: "", sans-serif;
+}
+
+body{
+  width: 100%;
+  font-family: inherit; 
+ }
+ 
+ #product1{
+  text-align: center;
+}
+
+#product1 h2 {
+  font-size: 30px;
+  padding-top: 10px;
+  text-shadow: 5px 10px 25px black;
+  padding-bottom: 40px;
+}
+
+#product1 button {
+  bottom-top: 100px;
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+}
+
+
+#product1 button i {
+  opacity: 0;
+  color: white;
+
+}
+
+
+#product1 button.clicked i {
+  opacity: 100;
+}
+
+#product1 button.clicked {
+  bottom-top: 100px;
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+#product1 .pro-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex: 1 1 300px; 
+  flex-wrap: wrap
+  }
+  
+  #product1 .pro{
+    width: 23%;
+    min-width: 200px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+  }
+  
+  #product1 .pro:hover{
+     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+  }
+
+  #product1 .pro .badge {
+    display:inline-block; 
+    margin: 10px; 
+    background:black; 
+    font-style: bold; 
+    position:absolute; 
+    z-index: 1; 
+    padding:3px 6px; 
+    color: black; 
+    background-color: #FFFFFF;
+  }
+
+  
+  #product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  #product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+  }
+
+  #product1 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 20px;
+    display: inline-block;
+  }
+  
+  #product1 .pro .des span{
+    color: black;
+    font-size: 15px;
+  }
+
+  #product1 .pro .des h4{
+    font-size: 15px;
+    padding-top: 7px;
+    font-weight: 500;
+    display: inline-block;
+    color: black;
+  }
+  #product1 .pro .des .price h4 span{
+    font-size: 15px;
+    padding-left: 10px;
+    text-decoration: line-through;
+    font-weight: 500;
+    color: grey;
+  }
+
+  #product1 .pro .des .price #offer{
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 10px;
+    color: #FF3737;
+  }
+  #product1 .pro button {
+     width: 250px;
+     color: white;
+      background-color:black; 
+      cursor:pointer; 
+      border: none;
+     border-radius: 10px;
+  }
+  
+
+  /* media query */
+
+  @media (max-width: 767px) {
+  
+    .section-p1 {
+      padding: 40px 40px  
+    }
+
+    
+    #product1 .pro-container{
+      justify-content: center
+    }
+    .categories button {
+      margin: 5px;
+    }
+
+    
+    #product1 .pro{
+      margin: 15px;
+      width: 40%;
+    }
+
+    #product1 .pro img{
+      width: 140px;
+      display: hidden;
+      height:40%;
+    }  
+    #product1 .pro button {
+      width: 120px;
+    }
+    #product1 .pro .badge {
+        width:60px;
+        font-size: 10px;
+    }
+
+    
+  }
+  
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .section-p1{
+        padding: 20px
+      }
+      .categories button {
+        margin-top: 20px;
+      }
+
+      
+      h2 {
+        font-size: 30px
+      }
+      
+      h1{
+        font-size: 28px
+      }
+      
+      p{
+        line-height: 24px;
+        font-size: 10px;
+      }
+      
+      
+      #product1 .pro{
+        width: 60%;
+      }
+      
+  
+      #product1 .pro img{
+        width: 100%;
+        position: relative;
+        object-fit: cover;
+      }
+  }
+  @media (min-width: 1025px) {
+
+    #product1 .pro-container{
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      flex: 1 1 300px; 
+      flex-wrap: wrap
+      }
+    
+    #product1 .pro-container .pro img{
+      width:100%;
+      height: 80%;
+      position: relative;
+      object-fit: cover;
+
+    }
+}
+
+  
+
